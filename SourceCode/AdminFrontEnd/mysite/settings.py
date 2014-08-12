@@ -1,5 +1,5 @@
 """
-Django settings for AdminSite project.
+Django settings for mysite project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f7!j4eu_=)-su8+7#b$dq#tt^-)v9$u4h2k&6a*dg+1&scg6p5'
+SECRET_KEY = '8bzhjy7ahq&cm&%uvh-$!kc)8@im-!&n-vyfk1o(+pz+q181jp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	#'polls',
+	'AdminUI',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -47,20 +49,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'AdminSite.urls'
+ROOT_URLCONF = 'mysite.urls'
 
-WSGI_APPLICATION = 'AdminSite.wsgi.application'
+WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 DATABASES = {
     'default': {
