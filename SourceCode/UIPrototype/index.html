@@ -32,44 +32,43 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+  
+	<!--menu-->
+	<div style="border: 0px solid red;">
+		<div class="navbar-wrapper">
+		  <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><b>Dream Work</b></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			  <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#"><b>Dream Work</b></a>
+				</div>
+				<div class="navbar-collapse collapse" style="border: 1px solid red;">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="pages/about_us.html">About Us</a></li>
+					<li><a href="pages/contact_us.html">Contact Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="pages/seeker/login_seeker.html">Seeker</a></li>
+							<li><a href="pages/provider/login_provider.html">Provider</a></li>
+						</ul>
+					</li>
+				  </ul>
+				  <span style="border: 1px solid red;float:right;color:#B44242;">Logout</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
 
 
     <!-- Carousel
@@ -114,18 +113,16 @@
 
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+      <!-- Two columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-6">
-          <!--<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">-->
-		  <img class="img-circle" src="images/seeker.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+		  <img class="img-circle" src="images/seeker.png" title="Seeker" style="width: 140px; height: 140px;">
           <h2>Seeker</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">Get Recruited &raquo;</a></p>
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-6">
-          <!--<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">-->
-		  <img class="img-circle" src="images/recruiter.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+		  <img class="img-circle" src="images/recruiter.jpg" title="Provider" style="width: 140px; height: 140px;">
           <h2>Provider</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">Get Recruit &raquo;</a></p>
@@ -140,11 +137,10 @@
       </footer>
     </div><!-- /.container -->
 
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <!--<script src="../../assets/js/docs.min.js"></script> -->
   </body>
