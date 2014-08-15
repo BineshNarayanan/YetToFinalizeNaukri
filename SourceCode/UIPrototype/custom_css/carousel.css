@@ -109,7 +109,7 @@ body {
   height: 500px;
 }
 
-#footerseparator {height:1px;background-color:gray;width:100%}
+#separator {height:1px;background-color:gray;width:100%}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -245,4 +245,201 @@ body {
 	background-color: #428BCA;
 	border-color: #357EBD;
 	width:100%;
+}
+
+.btn-register {
+	color: #FFF;
+	background-color: #F35C62;
+	border-color: #F35C62;
+	width:100%;
+}
+
+.btn-save {
+	color: #FFF;
+	background-color: #428BCA;
+	border-color: #357EBD;
+	width:10%;
+}
+
+.form-text-box {
+	display: block;
+	width: 30%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	float:left;
+}
+
+.form-element {
+	display: block;
+	#width: 30%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	float:left;
+}
+
+.form-textarea-box {
+	height: 60px;
+}
+
+
+
+.form-group-element {
+	margin-bottom: 15px;
+	overflow:hidden;
+	#border: 1px solid red;
+}
+
+.form-group-label {
+	float:left;
+	padding:7px 8px 0px 36px;
+	width:20%;
+	#border: 1px solid blue;
+}
+
+.logouticon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:red;
+}
+
+.btn-logout {
+	border:0px solid red;
+	float:right;
+	padding: 16px 0px 0px 0px;
+}
+
+.filter-col{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+/*Search Panel*/
+.filterable {
+    margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
+}
+
+
+.positions-table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+positions-table {
+	background-color: rgba(0, 0, 0, 0);
+}
+positions-table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.positions-table>tbody>tr>th, .positions-table>tfoot>tr>th, .positions-table>thead>tr>td, .positions-table>tbody>tr>td, .positions-table>tfoot>tr>td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #DDD;
+}
+
+.positions-table>thead>tr>th{
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #DDD;
+	background-color:#E6D6AD;
+}
+
+.positions-table>tbody>tr>td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #DDD;
+	height:50px;
+}
+
+
+.applications-table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+applications-table {
+	background-color: rgba(0, 0, 0, 0);
+}
+applications-table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.applications-table>tbody>tr>th, .applications-table>tfoot>tr>th, .applications-table>thead>tr>td, .applications-table>tbody>tr>td, .applications-table>tfoot>tr>td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #DDD;
+}
+
+.applications-table>thead>tr>th{
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #DDD;
+	background-color:#E6D6AD;
+}
+
+.applications-table>tbody>tr>td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #DDD;
+	height:50px;
 }

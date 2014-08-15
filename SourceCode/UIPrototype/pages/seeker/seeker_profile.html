@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.png">
+
+    <title>Dream Works!!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="../../custom_css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  
+	<!--menu-->
+	<div style="border: 0px solid red;">
+		<div class="navbar-wrapper">
+		  <div class="container">
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			  <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="../../index.html"><b>Dream Work</b></a>
+				</div>
+				<div class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="#">Profile</a></li>
+					<li><a href="../../pages/seeker/search.html">Search</a></li>
+				  </ul>
+				  <span class="glyphicon glyphicon-log-out logouticon btn-logout" onClick="location.href='../../index.html'"  title="Logout">&nbsp;<span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+			  <form class="form-horizontal" role="form">
+				<fieldset>
+
+				  <!-- Form Name -->
+					<legend>Tell us about yourself, Binesh</legend>
+
+				  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="title">Title</label>
+						<div class="col-sm-5">
+							<select id="title" name="selectbasic" class="input-xlarge form-text-box">
+								<option>Select</option>
+								<option>Ms.</option>
+								<option>Mrs.</option>
+								<option>Mr.</option>
+							</select>
+						</div>
+					</div>
+
+				  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="textinput">Name</label>
+						<div class="col-sm-7">
+						  <input type="text" id="name" placeholder="FirstName MiddleName LastName" class="form-control">
+						</div>
+					</div>
+
+				  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="tentativeJoiningDate">Tentative Joining Date</label>
+						<div class="col-sm-2">
+						  <input type="text" class="form-control" id="tentativeJoiningDate" placeholder="DD/MM/YYYY">
+						</div>
+					</div>
+				  
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="currentCity">Current Location</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="currentCity" placeholder="eg. Mumbai">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="currentJobTitle">Current Job Title</label>
+						<div class="col-sm-6">
+						  <input type="text" class="form-control" id="currentJobTitle" placeholder="eg. Software Engineer">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="currentAnnualSalary">Current Annual Salary</label>
+						<div class="col-sm-4">
+						  <input type="text" class="form-control" id="currentAnnualSalary" placeholder="in lakhs">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="totalExperience">Total Experience</label>
+						<div class="col-sm-2">
+							<select id="totalExperience" name="selectTotalExperienceYear" class="form-control">
+								<option>1 year</option>
+								<option>2 years</option>
+								<option>3 years</option>
+								<option>4 years</option>
+								<option>5 years</option>
+								<option>6 years</option>
+								<option>7 years</option>
+								<option>8 years</option>
+								<option>9 years</option>
+								<option>10 years</option>
+							</select>
+						</div>
+						<div class="col-sm-2">
+							<select id="totalExperience" name="selectTotalExperienceMons" class="form-control">
+								<option>1 month</option>
+								<option>2 months</option>
+								<option>3 months</option>
+								<option>4 months</option>
+								<option>5 months</option>
+								<option>6 months</option>
+								<option>7 months</option>
+								<option>8 months</option>
+								<option>9 months</option>
+								<option>10 months</option>
+								<option>11 months</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="skillSets">SkillSets</label>
+						<div class="col-sm-6">
+							<textarea id="skillSets" class="form-control form-textarea-box" name="skillSets" placeholder="Enter your skill sets"></textarea>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="desiredJobTitle">Desired Job Title</label>
+						<div class="col-sm-6">
+						  <input type="text" class="form-control" id="desiredJobTitle" placeholder="eg. Senior Software Engineer">
+						</div>
+					</div>			
+
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="desiredAnnualSalary">Desired Annual Salary</label>
+						<div class="col-sm-4">
+						  <input type="text" class="form-control" id="desiredAnnualSalary" placeholder="in lakhs">
+						</div>
+					</div>			
+
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="desiredJobLocation">Desired Job Location(s)</label>
+						<div class="col-sm-5">
+						  <input type="text" class="form-control" id="desiredJobLocation" placeholder="eg. Bangalore, Singapore">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="resume">Resume(max. 1MB)</label>
+						<div class="col-sm-5">
+							<input type="file" id="resume" class="form-control filestyle" data-input="false">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<div class="pull-right">
+								<button type="submit" class="btn btn-default">Cancel</button>
+								<button type="submit" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+
+				</fieldset>
+			  </form>
+			</div><!-- /.col-lg-12 -->
+		</div>
+	</div>
+
+    <div class="container marketing">
+      <!-- FOOTER -->
+	  <hr>
+      <footer align="center">
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div><!-- /.container -->
+	<!-- Modal -->
+	<div class="modal fade" id="seekerLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel"><b>Seeker Login</b></h4>
+				</div>
+				<div class="modal-footer">
+					<form role="form">
+						<div class="form-group">
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary btn-login">Enter</button>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary btn-register">New User? Create an account</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="providerLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel"><b>Provider Login</b></h4>
+				</div>
+				<div class="modal-footer">
+					<form role="form">
+						<div class="form-group">
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary btn-login">Enter</button>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary btn-register">New User? Create an account</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../dist/js/jquery.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!--<script src="../../assets/js/docs.min.js"></script> -->
+  </body>
+</html>
