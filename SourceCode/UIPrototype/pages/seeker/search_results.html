@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../images/favicon.png">
+    <link rel="icon" href="../../images/favicon.png">
 
     <title>Dream Works!!</title>
 
@@ -135,15 +135,6 @@
 					</button>
 				</div>
 			</div>
-			<!--
-			<div class="col-lg-6">
-				<div class="form-group">
-					<button type="button" class="btn btn-primary pull-left" data-toggle="collapse" data-target="#filter-panel">
-						<span class="glyphicon glyphicon-cog"></span>Advanced Search
-					</button>
-				</div>
-			</div>
-			-->
 		</div>
 	</div>
 	<div class="container">
@@ -152,7 +143,7 @@
 				<div class="panel-heading">
 					<h3 class="panel-title"><span>Jobs</span><span style="float:right;">Total Results : 11</span></h3>
 				</div>
-				<div class="table-responsive">
+				<div class="table-responsive" id="page-content">
 					<table class="positions-table">
 						<thead>
 							<tr>
@@ -272,24 +263,13 @@
 									</button>
 								</td>
 							</tr>
-							<tr>
-								<td>11</td>
-								<td>
-									<span data-toggle="modal" data-target="#positionDetails"><b>Position Title</b></span><br/><span><i>Skills</i></span><br/><span><i>Location</i></span>
-								</td>
-								<td style="vertical-align: middle;">
-									<button type="button" id="buttonApply" class="btn btn-primary popover-dismiss" data-placement="top" data-toggle="popover" data-content="Your Application has been sent.">
-										<span class="glyphicon glyphicon-send" style="color:white;"></span>&nbsp;&nbsp;Apply
-									</button>
-								</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
 			<div class="col-lg-12" style="width:96%">
 				<div class="form-group">
-					<ul class="pagination pull-right">
+					<ul id="pagination-demo" class="pagination pull-right">
 					  <li class="disabled"><a href="#">&laquo;</a></li>
 					  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
 					  <li><a href="#">2 </a></li>
@@ -342,6 +322,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../dist/js/jquery.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
+	<script src="../../dist/js/jquery.twbsPagination.js"></script>
+	<script src="../../dist/js/jquery.twbsPagination.min.js"></script>
 	<script>
 		$(function () { 
 			$("[data-toggle='tooltip']").tooltip(); 
@@ -356,6 +338,56 @@
 			$.ajax().always(function () {
 				btn.button('reset');
 			});
+		});
+		$('#pagination-demo').twbsPagination({
+			totalPages: 2,
+			visiblePages: 2,
+			onPageClick: function (event, page) {
+				$('#page-content').html('<table class="positions-table">'+
+						'<thead>'+
+							'<tr>'+
+								'<th style="width:5%">#</th>'+
+								'<th style="width:85%">Position</th>'+
+								'<th style="width:10%">Action</th>'+
+							'</tr>'+
+						'</thead>'+
+						'<tbody>' +
+							'<tr>'+
+								'<td>11</td>'+
+								'<td>'+
+									'<span data-toggle="modal" data-target="#positionDetails"><b>Position Title</b></span><br/><span><i>Skills</i></span><br/><span><i>Location</i></span>'+
+								'</td>'+
+								'<td style="vertical-align: middle;">'+
+									'<button type="button" id="buttonApply" class="btn btn-primary popover-dismiss" data-placement="top" data-toggle="popover" data-content="Your Application has been sent.">'+
+										'<span class="glyphicon glyphicon-send" style="color:white;"></span>&nbsp;&nbsp;Apply'+
+									'</button>'+
+								'</td>'+
+							'</tr>'+
+							'<tr>'+
+								'<td>12</td>'+
+								'<td>'+
+									'<span data-toggle="modal" data-target="#positionDetails"><b>Position Title</b></span><br/><span><i>Skills</i></span><br/><span><i>Location</i></span>'+
+								'</td>'+
+								'<td style="vertical-align: middle;">'+
+									'<button type="button" id="buttonApply" class="btn btn-primary popover-dismiss" data-placement="top" data-toggle="popover" data-content="Your Application has been sent.">'+
+										'<span class="glyphicon glyphicon-send" style="color:white;"></span>&nbsp;&nbsp;Apply'+
+									'</button>'+
+								'</td>'+
+							'</tr>'+
+							'<tr>'+
+								'<td>13</td>'+
+								'<td>'+
+									'<span data-toggle="modal" data-target="#positionDetails"><b>Position Title</b></span><br/><span><i>Skills</i></span><br/><span><i>Location</i></span>'+
+								'</td>'+
+								'<td style="vertical-align: middle;">'+
+									'<button type="button" id="buttonApply" class="btn btn-primary popover-dismiss" data-placement="top" data-toggle="popover" data-content="Your Application has been sent.">'+
+										'<span class="glyphicon glyphicon-send" style="color:white;"></span>&nbsp;&nbsp;Apply'+
+									'</button>'+
+								'</td>'+
+							'</tr>'+
+						'</tbody>'+
+					'</table>');
+			}
 		});
 	</script>
     <!--<script src="../../assets/js/docs.min.js"></script> -->
