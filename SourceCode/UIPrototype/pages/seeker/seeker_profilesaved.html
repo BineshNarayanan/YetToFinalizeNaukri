@@ -64,7 +64,7 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 			  <form class="form-horizontal" role="form">
-				<fieldset>
+				<fieldset readonly>
 
 				  <!-- Form Name -->
 					<legend style="padding:10px;">Tell us about yourself, Binesh</legend>
@@ -73,12 +73,7 @@
 					<div class="form-group">
 						<label class="col-sm-3 control-label" for="title">Title</label>
 						<div class="col-sm-5">
-							<select id="title" name="selectbasic" class="input-xlarge form-text-box">
-								<option>Select</option>
-								<option>Ms.</option>
-								<option>Mrs.</option>
-								<option>Mr.</option>
-							</select>
+							<input type="text" id="name" placeholder="Mr." class="form-control input-xlarge form-text-box">
 						</div>
 					</div>
 
@@ -190,8 +185,7 @@
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
 							<div class="pull-right">
-								<button type="button" class="btn btn-default" onClick="location.href='search.html'">Cancel</button>
-								<button type="button" class="btn btn-primary" onClick="location.href='../../pages/seeker/seeker_profilesaved.html'">Save</button>
+								<button type="button" class="btn btn-primary" onClick="location.href='../../pages/seeker/seeker_profile.html'">Edit</button>
 							</div>
 						</div>
 					</div>

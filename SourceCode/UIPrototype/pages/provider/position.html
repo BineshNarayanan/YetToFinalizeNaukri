@@ -54,7 +54,7 @@
 					<li class="active"><a href="#">Post a Job</a></li>
 					<li><a href="../../pages/provider/search.html">Search</a></li>
 				  </ul>
-				  <span class="glyphicon glyphicon-log-out logouticon btn-logout" onClick="location.href='../../index.html'"  title="Logout">&nbsp;<span>
+				  <span id="tool" class="glyphicon glyphicon-log-out logouticon btn-logout" onClick="location.href='../../index.html'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Logout">&nbsp;<span>
 				</div>
 			  </div>
 			</div>
@@ -214,6 +214,20 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../dist/js/jquery.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
-    <!--<script src="../../assets/js/docs.min.js"></script> -->
+    <script>
+		$(function () { 
+			$("[data-toggle='tooltip']").tooltip(); 
+		});
+		$('.popover-dismiss').popover({
+			trigger: 'focus'
+		})
+		$('#buttonApply').click(function () {
+			var btn = $(this)
+			btn.button('loading');
+			$.ajax().always(function () {
+				btn.button('reset');
+			});
+		});
+	</script>
   </body>
 </html>
