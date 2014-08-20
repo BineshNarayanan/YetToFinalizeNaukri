@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="../../dist/css/datepicker.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
@@ -73,8 +73,8 @@
 				  <!-- Text input-->
 					<div class="form-group">
 						<label class="col-sm-3 control-label" for="tentativeJoiningDate">Tentative Joining Date</label>
-						<div class="col-sm-2">
-						  <input type="text" class="form-control" id="tentativeJoiningDate" placeholder="DD/MM/YYYY">
+						<div class="col-sm-2 input-group date custom-date">
+							<input type="text" class="form-control" id="tentativeJoiningDate" placeholder="Joining Date"><span class="input-group-addon"><i class="glyphicon glyphicon-th" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Pick a Date"></i></span>
 						</div>
 					</div>
 				  
@@ -221,6 +221,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../dist/js/jquery.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
+	<script src="../../dist/js/bootstrap-datepicker.js"></script>
     <script>
 		$(function () { 
 			$("[data-toggle='tooltip']").tooltip(); 
@@ -234,6 +235,10 @@
 			$.ajax().always(function () {
 				btn.button('reset');
 			});
+		});
+		$('.input-group.date').datepicker({
+			autoclose: true,
+			todayHighlight: true
 		});
 	</script>
   </body>
