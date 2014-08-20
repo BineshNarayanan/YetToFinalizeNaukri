@@ -502,7 +502,9 @@ applications-table {
 	padding: 11px 8px 0px 0px;
 	font-size: 18px;	
 	text-align: right;
-	width: 28%;
+	width: 50%;
+	border: 0px solid #F00;
+	position: absolute;
 }
 
 .input-group[class*=custom-date] {
