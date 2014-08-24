@@ -1,0 +1,18 @@
+/*
+.segmented-control .control-item .custom-background {
+	background-color: #98DA79;
+}
+
+.segmented-control .control-item .custom-background .active {
+	background-color: #38C0DA;
+}
+*/
+
+.icon-avatar {
+	background-image:url("../images/avatar.png");
+}
+
+.border-left-none {
+	border-left:0px;
+}
+
