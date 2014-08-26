@@ -23,13 +23,13 @@
 
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
-		<button class="btn btn-link btn-nav pull-left">
+		<button class="btn btn-link btn-nav pull-left" onClick="location.href='index.html'" data-transition="fade">
 			<span class="icon icon-left-nav" style="color:black;"></span>
 		</button>
 		<button class="btn btn-link btn-nav pull-right" onClick="location.href='index.html'" data-transition="fade">
 			<span class="icon icon-close" style="color:black;"></span>
 		</button>
-		<h1 class="title" style="background-color: #E22A1A;font-size:20px;">DreamWorks!!</h1>
+		<h1 class="title title-bar">DreamWorks!!</h1>
 	</header>
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
@@ -38,7 +38,24 @@
 			<span class="icon icon-person"></span>
 			<span>Hi, Binesh</span>
 		</div>
+		
+		<nav class="bar bar-tab footer-bar">
+			<a class="tab-item active" href="#Home">
+				<span class="icon icon-home"></span>
+				<span class="tab-label">Home</span>
+			</a>
+			<a class="tab-item" href="#Profile">
+				<span class="icon icon-person" style="color:black;"></span>
+				<span class="tab-label" style="color:black;">Profile</span>
+			</a>
+			<a class="tab-item" href="#Search">
+				<span class="icon icon-search" style="color:black;"></span>
+				<span class="tab-label" style="color:black;">Search</span>
+			</a>
+		</nav>
     </div>
+	
+	
 
   </body>
 </html>

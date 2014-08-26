@@ -8,6 +8,18 @@
 }
 */
 
+.title-bar {
+	background-color: #2A485C;
+	font-size:20px;
+	color:#7ABFF5;
+}
+
+.footer-bar {
+	background-color: #2A485C;
+	font-size:20px;
+	color:#7ABFF5;
+}
+
 .icon-avatar {
 	background-image:url("../images/avatar.png");
 }
@@ -16,3 +28,7 @@
 	border-left:0px;
 }
 
+.btn-register {
+	background-color: #F35C62;
+	border-color: #F35C62;
+}
