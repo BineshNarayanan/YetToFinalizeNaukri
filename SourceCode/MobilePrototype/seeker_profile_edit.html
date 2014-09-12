@@ -37,35 +37,43 @@
 			<span class="icon icon-person"></span>
 			<span>Hi, Binesh Narayanan</span>
 		</div>
-		<div class="content content-padded">
-			<input type="text" placeholder="Joining Date">
-			<input type="text" placeholder="Skills e.g. Java">
-			<input type="text" placeholder="Location e.g. Mumbai, Singapore">
-			<input type="text" placeholder="Title e.g. Software Architect">
-			<input type="text" placeholder="Dream Companies e.g. Google, Amazon">
-			<input type="text" placeholder="Experience in years.months e.g. 1.11">
-			<button class="btn btn-primary btn-block" onClick="location.href='search_job_results.html'" data-transition="fade">
-				<span class="icon icon-search"></span>
-			</button>
+		<div class="content">
+			<div class="content-padded">
+				<input type="text" placeholder="Tentative Joining Date"></input>
+				<input type="text" placeholder="Desired Job Title"></input>
+				<input type="text" placeholder="Desired Annual Salary"></input>
+				<input type="text" placeholder="Desired Job Location(s)"></input>
+				<input type="text" placeholder="Title"></input>
+				<input type="text" placeholder="Name"></input>
+				<input type="text" placeholder="Current Location"></input>
+				<input type="text" placeholder="Current Job Title"></input>
+				<input type="text" placeholder="Current Annual Salary"></input>
+				<input type="text" placeholder="Total Experience"></input>
+				<input type="text" placeholder="SkillSets"></input>
+				<input type="text" placeholder="Hide Profile From"></input>
+				<button class="btn btn-primary btn-block" onClick="location.href='seeker_profile.html'" data-transition="fade">
+					<span>Save</span>
+				</button>
+			</div>
+			<div class="bar-tab" style="background-color: #2A485C;">
+				<a class="tab-item" href="#">
+					<span class="icon icon-home"></span>
+					<span class="tab-label">Home</span>
+				</a>
+				<a class="tab-item active" href="#">
+					<span class="icon icon-person"></span>
+					<span class="tab-label icon-label">Profile</span>
+				</a>
+				<a class="tab-item" onClick="location.href='search_job.html'" data-transition="fade">
+					<span class="icon icon-search"></span>
+					<span class="tab-label icon-label">Search</span>
+				</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-gear"></span>
+					<span class="tab-label icon-label">Settings</span>
+				</a>
+			</div>
 		</div>
 		
-		<nav class="bar bar-tab" style="background-color: #2A485C;">
-			<a class="tab-item" href="#">
-				<span class="icon icon-home"></span>
-				<span class="tab-label">Home</span>
-			</a>
-			<a class="tab-item" onClick="location.href='seeker_profile.html'">
-				<span class="icon icon-person"></span>
-				<span class="tab-label icon-label">Profile</span>
-			</a>
-			<a class="tab-item active" href="#">
-				<span class="icon icon-search"></span>
-				<span class="tab-label icon-label">Search</span>
-			</a>
-			<a class="tab-item" href="#">
-				<span class="icon icon-gear"></span>
-				<span class="tab-label icon-label">Settings</span>
-			</a>
-		</nav>
 	</body>
 </html>

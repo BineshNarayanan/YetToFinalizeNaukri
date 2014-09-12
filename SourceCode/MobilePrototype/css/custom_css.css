@@ -32,3 +32,11 @@
 	background-color: #F35C62;
 	border-color: #F35C62;
 }
+
+input,
+textarea,
+button,
+select {
+  font-family: "Calibri";
+  font-size: 17px;
+}

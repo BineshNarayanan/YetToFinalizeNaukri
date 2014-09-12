@@ -24,10 +24,10 @@
 		<!-- Make sure all your bars are the first things in your <body> -->
 		<header class="bar bar-nav">
 			<button class="btn btn-link btn-nav pull-left" onClick="location.href='index.html'" data-transition="fade">
-				<span class="icon icon-left-nav" style="color:black;"></span>
+				<span class="icon icon-left-nav" style="color:red;"></span>
 			</button>
 			<button class="btn btn-link btn-nav pull-right" onClick="location.href='index.html'" data-transition="fade">
-				<span class="icon icon-close" style="color:black;"></span>
+				<span class="icon icon-close" style="color:red;"></span>
 			</button>
 			<h1 class="title" style="background-color: #2A485C;font-size:20px;color:#3FA8C9;">DreamWorks!!</h1>
 		</header>
@@ -35,36 +35,50 @@
 		<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 		<div class="bar bar-standard bar-header-secondary" style="text-align:center;">
 			<span class="icon icon-person"></span>
-			<span>Hi, Binesh</span>
+			<span>Hi, Binesh Narayanan</span>
 		</div>
 		<div class="content">
 			<div class="card">
 				<ul class="table-view">
-					<li class="table-view-cell">Item 1</li>
-					<li class="table-view-cell">Item 2</li>
-					<li class="table-view-cell">Item 3</li>
-					<li class="table-view-cell">Item 4</li>
+					<li class="table-view-cell">Tentative Joining Date | </li>
+					<li class="table-view-cell">Desired Job Title | </li>
+					<li class="table-view-cell">Desired Annual Salary | </li>
+					<li class="table-view-cell">Desired Job Location(s) | </li>
+					<li class="table-view-cell">Title | </li>
+					<li class="table-view-cell">Name | </li>
+					<li class="table-view-cell">Current Location | </li>
+					<li class="table-view-cell">Current Job Title | </li>
+					<li class="table-view-cell">Current Annual Salary | </li>
+					<li class="table-view-cell">Total Experience : </li>
+					<li class="table-view-cell">SkillSets | </li>
+					<li class="table-view-cell">Hide Profile From | </li>
+					<li class="table-view-cell">Resume(max. 1MB) | </li>
 				</ul>
+			</div>
+			<div class="content-padded">
+				<button class="btn btn-primary pull-right" style="width:70px;" onClick="location.href='seeker_profile_edit.html'" data-transition="fade">
+					<span>Edit</span>
+				</button>
+			</div>
+			<div class="bar-tab" style="background-color: #2A485C;">
+				<a class="tab-item" href="#">
+					<span class="icon icon-home"></span>
+					<span class="tab-label">Home</span>
+				</a>
+				<a class="tab-item active" href="#">
+					<span class="icon icon-person"></span>
+					<span class="tab-label icon-label">Profile</span>
+				</a>
+				<a class="tab-item" onClick="location.href='search_job.html'" data-transition="fade">
+					<span class="icon icon-search"></span>
+					<span class="tab-label icon-label">Search</span>
+				</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-gear"></span>
+					<span class="tab-label icon-label">Settings</span>
+				</a>
 			</div>
 		</div>
 		
-		<nav class="bar bar-tab" style="background-color: #2A485C;">
-			<a class="tab-item" href="#">
-				<span class="icon icon-home"></span>
-				<span class="tab-label">Home</span>
-			</a>
-			<a class="tab-item active" href="#">
-				<span class="icon icon-person"></span>
-				<span class="tab-label icon-label">Profile</span>
-			</a>
-			<a class="tab-item" onClick="location.href='search_job.html'" data-transition="fade">
-				<span class="icon icon-search"></span>
-				<span class="tab-label icon-label">Search</span>
-			</a>
-			<a class="tab-item" href="#">
-				<span class="icon icon-gear"></span>
-				<span class="tab-label icon-label">Settings</span>
-			</a>
-		</nav>
 	</body>
 </html>
